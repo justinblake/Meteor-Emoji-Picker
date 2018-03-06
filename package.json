@@ -1,8 +1,8 @@
 {
   "name": "meteor-emoji",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "A pure JS emoji picker because I couldn't find one that worked with meteor",
-  "main": "dist/meteor-emoji.min.js",
+  "main": "dist/meteorEmoji.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-debug": "browserify src/meteorEmoji.js -s MeteorEmoji -t [babelify] -o dist/meteorEmoji.js",
