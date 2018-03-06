@@ -22,9 +22,9 @@ Include the meteorEmoji.min.js file from the 'dist' folder in your project, and 
 new MeteorEmoji();
 ```
 
-Now you can add emoji pickers to your input fields! For a full width emoji picker, simply add the attribute `data-emoji-picker-large="true"` to your field. This will create an always open, full width emoji picker below the desired input box.
+Now you can add emoji pickers to your input fields! For a full width emoji picker, simply add the attribute `data-meteor-emoji-large="true"` to your field. This will create an always open, full width emoji picker below the desired input box.
 
-If you want the classic "press a button to open" style picker, just use `data-emoji-picker="true"` on an input field. 
+If you want the classic "press a button to open" style picker, just use `data-meteor-emoji="true"` on an input field. 
 
 
 
