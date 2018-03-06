@@ -4,6 +4,18 @@
 
 ## How do I use it?
 
+This plugin can be installed via NPM:
+
+```
+npm install meteor-emoji
+```
+
+Or Meteor 
+
+```
+meteor add georgemccann:meteor-emoji-picker
+```
+
 Include the meteorEmoji.min.js file from the 'dist' folder in your project, and then use:
 
 ```js
