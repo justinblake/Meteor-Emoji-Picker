@@ -251,6 +251,7 @@
           emojiLink.style.fontSize = "24px";
           emojiLink.setAttribute("href", "javascript:void(0)");
           emojiLink.style.display = "table-cell";
+          emojiLink.style.textAlign = "center";
           emojiLink.id = String(item['name']);
 
           if (String(item["name"]) == "faces") {
