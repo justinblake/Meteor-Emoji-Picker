@@ -61,9 +61,19 @@
       value: function generateElements(emojiInput) {
 
         var clickLink = function clickLink(event) {
-          var caretPos = emojiInput.selectionStart;
-          emojiInput.value = emojiInput.value.substring(0, caretPos) + " " + event.target.innerHTML + emojiInput.value.substring(caretPos);
-          emojiPicker.style.display = "block";
+          // Is inserting via CKEditor
+          if ($(emojiInput).parent('div').siblings('.cke').length) {
+              CKEDITOR.instances.bodyEditor.insertText(event.target.innerHTML);
+          }
+          else {
+              var caretPos = emojiInput.selectionStart;
+              if (caretPos != null) {
+                  emojiInput.value = emojiInput.value.substring(0, caretPos) + " " + event.target.innerHTML + emojiInput.value.substring(caretPos);
+              }
+              else { // is probably contentEditable or something else
+                  $(emojiInput).append(event.target.innerHTML);
+              }
+          }
 
           //trigger ng-change for angular
           if (typeof angular !== "undefined") {
