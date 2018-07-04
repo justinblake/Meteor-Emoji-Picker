@@ -16,14 +16,19 @@ class MeteorEmoji {
     
 
     const clickLink = event => {
-      var caretPos = emojiInput.selectionStart;
-      if (caretPos) {
-          emojiInput.value = emojiInput.value.substring(0, caretPos) + " " + event.target.innerHTML + emojiInput.value.substring(caretPos);
+      // Is inserting via CKEditor
+      if ($(emojiInput).siblings('.cke').length) {
+          CKEDITOR.instances.bodyEditor.insertText(event.target.innerHTML);
       }
-      else { // is probably contentEditable or something else
-        $(emojiInput).append(event.target.innerHTML);
+      else {
+          var caretPos = emojiInput.selectionStart;
+          if (caretPos != null) {
+              emojiInput.value = emojiInput.value.substring(0, caretPos) + " " + event.target.innerHTML + emojiInput.value.substring(caretPos);
+          }
+          else { // is probably contentEditable or something else
+              $(emojiInput).append(event.target.innerHTML);
+          }
       }
-      emojiPicker.style.display = "none";
 
       //trigger ng-change for angular
       if (typeof angular !== "undefined") {
