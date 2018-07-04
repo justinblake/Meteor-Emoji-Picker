@@ -17,9 +17,13 @@ class MeteorEmoji {
 
     const clickLink = event => {
       var caretPos = emojiInput.selectionStart;
-      emojiInput.value =
-      emojiInput.value.substring(0, caretPos) + " " + event.target.innerHTML + emojiInput.value.substring(caretPos);
-      emojiPicker.style.display = "block";
+      if (caretPos) {
+          emojiInput.value = emojiInput.value.substring(0, caretPos) + " " + event.target.innerHTML + emojiInput.value.substring(caretPos);
+      }
+      else { // is probably contentEditable or something else
+        $(emojiInput).append(event.target.innerHTML);
+      }
+      emojiPicker.style.display = "none";
 
       //trigger ng-change for angular
       if (typeof angular !== "undefined") {
