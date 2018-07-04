@@ -17,7 +17,7 @@ class MeteorEmoji {
 
     const clickLink = event => {
       // Is inserting via CKEditor
-      if ($(emojiInput).siblings('.cke').length) {
+      if ($(emojiInput).parent('div').siblings('.cke').length) {
           CKEDITOR.instances.bodyEditor.insertText(event.target.innerHTML);
       }
       else {
