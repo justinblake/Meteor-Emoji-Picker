@@ -116,6 +116,7 @@
         emojiContainer.appendChild(emojiInput);
 
         var emojiPicker = document.createElement("div");
+        emojiPicker.setAttribute('id', "emoji-style");
         emojiPicker.tabIndex = 0;
 
         if (emojiInput.hasAttribute("data-meteor-emoji-large")) {
