@@ -13,13 +13,7 @@ This repo is a fork of the original Meteor-Emoji-Picker but now includes the out
 This plugin can be installed via NPM:
 
 ```
-npm install meteor-emoji
-```
-
-Or Meteor 
-
-```
-meteor add georgemccann:meteor-emoji-picker
+npm install meteor-emoji-fork
 ```
 
 Include the meteorEmoji.min.js file from the 'dist' folder in your project, and then use:
