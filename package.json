@@ -1,6 +1,6 @@
 {
   "name": "meteor-emoji-fork",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Fork of original repo to include two code fixes",
   "main": "dist/meteorEmoji.min.js",
   "scripts": {
