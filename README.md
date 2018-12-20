@@ -1,3 +1,9 @@
+# Forked Repo of Meteor-Emoji-Picker
+
+This repo is a fork of the original Meteor-Emoji-Picker but now includes the outstanding pull requests that add ids to the emoji-picker box and the emoji-picker trigger to allow for selecting of these two new elements, and the code fix that makes sure emojis aren't inserted at the beginning of the textarea or input fields.
+
+
+
 # A Meteor compatible Emoji Picker
 
 > After trapsing through a tonne of emoji pickers for Meteor project. It became pretty apparent that most of them didn't work, or were just pretty terrible. This emoji picker is pure, vanilla JavaScript, so should be compatible with most JS projects. However, I've specifically built this for the intent to use with Meteor. 
