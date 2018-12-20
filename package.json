@@ -1,7 +1,7 @@
 {
-  "name": "meteor-emoji",
+  "name": "meteor-emoji-fork",
   "version": "0.1.6",
-  "description": "A pure JS emoji picker because I couldn't find one that worked with meteor",
+  "description": "Fork of original repo to include two code fixes",
   "main": "dist/meteorEmoji.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CreateMarketing/Meteor-Emoji-Picker.git"
+    "url": "git+https://github.com/justinblake/Meteor-Emoji-Picker.git"
   },
   "keywords": [
     "meteor-emoji-picker",
@@ -20,9 +20,9 @@
   "author": "George McCann",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CreateMarketing/Meteor-Emoji-Picker/issues"
+    "url": "https://github.com/justinblake/Meteor-Emoji-Picker/issues"
   },
-  "homepage": "https://github.com/CreateMarketing",
+  "homepage": "https://github.com/justinblake/Meteor-Emoji-Picker",
   "devDependencies": {
     "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
