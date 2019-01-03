@@ -1,10 +1,10 @@
 class MeteorEmoji {
-  constructor() {
-    this.initiate()
+  constructor(element) {
+    this.initiate(element)
   }
 
-  initiate() {
-    const emojiInputs = document.querySelectorAll('[data-meteor-emoji="true"], [data-meteor-emoji-large="true"]')
+  initiate(element) {
+    const emojiInputs = element.querySelectorAll('[data-meteor-emoji="true"], [data-meteor-emoji-large="true"]')
 
     emojiInputs.forEach(element => {
       this.generateElements(element)

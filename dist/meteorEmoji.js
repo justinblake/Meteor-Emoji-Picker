@@ -39,18 +39,18 @@
   }();
 
   var MeteorEmoji = function () {
-    function MeteorEmoji() {
+    function MeteorEmoji(element) {
       _classCallCheck(this, MeteorEmoji);
 
-      this.initiate();
+      this.initiate(element);
     }
 
     _createClass(MeteorEmoji, [{
       key: 'initiate',
-      value: function initiate() {
+      value: function initiate(element) {
         var _this = this;
 
-        var emojiInputs = document.querySelectorAll('[data-meteor-emoji="true"], [data-meteor-emoji-large="true"]');
+        var emojiInputs = element.querySelectorAll('[data-meteor-emoji="true"], [data-meteor-emoji-large="true"]');
 
         emojiInputs.forEach(function (element) {
           _this.generateElements(element);
